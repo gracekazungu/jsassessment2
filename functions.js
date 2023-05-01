@@ -72,14 +72,13 @@ console.log(books)
 function checkoutBook(booktitle){
     for(p in books){
     const j=p.filter(p=>p.isAvailable)
-    if(j)
-    }
-
-    
-
+}
 }
 
 // 5. Create a function returnBook that takes a book title as an argument and changes the
 // book's isAvailable property to true. If the book is not found in the library, the function
 // should return a message indicating that the book does not belong to the library.
 
+function returnBook(booktitle){
+    
+}
