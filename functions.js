@@ -2,8 +2,10 @@
 // books.
 function getAvailableBooks(books){
     let y=[]
-    for(i in books){
-    y.push(books.title)
+    for(let i=0;i<books.length;i++){
+        if(books[i].isAvailable==true){
+            y.push(books[i].title)
+        }
     }
     return y
 }
@@ -19,8 +21,8 @@ const books = [
     isAvailable: false },
     { title: 'The Odyssey', author: 'Homer', publicationYear: -800, isAvailable: true },
     ];
-    getAvailableBooks(books)
-    console.log(books)
+    console.log(getAvailableBooks(books))
+    
 
 
 
